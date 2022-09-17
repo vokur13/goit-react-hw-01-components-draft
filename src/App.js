@@ -1,7 +1,8 @@
 // import logo from './logo.svg';
 import ProfileMap from './components/profile/ProfileMap';
 import ProfileSection from './components/profile/ProfileSection';
-import Statistics from './components/statistics/Statistics';
+import StatisticsMap from './components/statistics/StatisticsMap';
+import StatisticsSection from './components/statistics/StatisticsSection';
 import user from './json/user.json';
 import data from './json/data.json';
 import './App.css';
@@ -9,10 +10,12 @@ import './App.css';
 function App() {
   return (
     <div>
-      {/* <ProfileSection title="User Profile">
+      <ProfileSection title="User Profile">
         <ProfileMap item={user} />
-      </ProfileSection> */}
-      <Statistics stats={data} />
+      </ProfileSection>
+      <StatisticsSection title={'Upload stats'}>
+        <StatisticsMap dataArr={data} />
+      </StatisticsSection>
     </div>
   );
 }

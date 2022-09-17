@@ -1,8 +1,25 @@
-// import Statistics from './Statistics';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
+import Statistics from './Statistics';
 
-// function StatisticsMap({ elements }) {
-//   <ul></ul>;
-// }
+function StatisticsMap({ dataArr }) {
+  return (
+    <ul className="stat-list">
+      {dataArr.map(dataElement => (
+        <li key={dataElement.id} className="item">
+          <Statistics
+            label={dataElement.label}
+            ratio={dataElement.percentage}
+          />
+        </li>
+      ))}
+    </ul>
+  );
+}
 
-// export default StatisticsMap;
+StatisticsMap.propTypes = {
+  dataArr: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string.isRequired }),
+  ),
+};
+
+export default StatisticsMap;
