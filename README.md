@@ -90,4 +90,10 @@ This section has moved here:
 This section has moved here:
 [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Коллекции - 01:29
+### Создание разметки - 00:29:38
+
+### Рендер по условию - 01:22:46
+
+### Коллекции - 01:29:11
+
+### Секция - 02:00:49
