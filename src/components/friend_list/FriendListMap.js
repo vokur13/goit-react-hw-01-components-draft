@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import FriendList from './FriendList';
 
-function FriendListMap({ friends }) {
+function FriendListMap({ data }) {
   return (
     <ul className="friend-list">
-      {friends.map(friend => (
-        <li key={friend.id} className="item">
+      {data.map(item => (
+        <li key={item.id} className="item">
           <FriendList
-            isOnline={friend.isOnline}
-            avatar={friend.avatar}
-            name={friend.name}
+            isOnline={item.isOnline}
+            avatar={item.avatar}
+            name={item.name}
           />
           <p className="name"></p>
         </li>

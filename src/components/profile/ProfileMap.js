@@ -1,17 +1,17 @@
 import Profile from './Profile';
 import PropTypes from 'prop-types';
 
-export default function ProfileMap({ item }) {
+export default function ProfileMap({ data }) {
   return (
     <Profile
-      key={item.username}
-      avatar={item.avatar}
-      username={item.username}
-      tag={item.tag}
-      location={item.location}
-      followers={item.stats.followers}
-      views={item.stats.views}
-      likes={item.stats.likes}
+      key={data.username}
+      avatar={data.avatar}
+      username={data.username}
+      tag={data.tag}
+      location={data.location}
+      followers={data.stats.followers}
+      views={data.stats.views}
+      likes={data.stats.likes}
     />
   );
 }

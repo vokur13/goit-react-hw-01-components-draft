@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import TransactionHistoryBody from './TransactionHistoryBody';
 
-function TransactionHistoryBodyMap({ transactionsData }) {
+function TransactionHistoryBodyMap({ data }) {
   return (
     <tbody>
-      {transactionsData.map(item => (
+      {data.map(item => (
         <TransactionHistoryBody
           key={item.id}
           type={item.type}

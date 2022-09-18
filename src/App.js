@@ -19,18 +19,18 @@ function App() {
   return (
     <div>
       <ProfileSection title="User Profile">
-        <ProfileMap item={user} />
+        <ProfileMap data={user} />
       </ProfileSection>
-      <StatisticsSection title={'Upload stats'}>
+      <StatisticsSection title={'Statistics'}>
         <StatisticsMap data={data} />
       </StatisticsSection>
       <FriendListSection title="Friends List">
-        <FriendListMap friends={friends} />
+        <FriendListMap data={friends} />
       </FriendListSection>
       <TransactionHistorySection title="Transactions History">
         <TransactionHistoryTable>
           <TransactionHistoryHeadMap />
-          <TransactionHistoryBodyMap transactionsData={transactions} />
+          <TransactionHistoryBodyMap data={transactions} />
         </TransactionHistoryTable>
       </TransactionHistorySection>
     </div>

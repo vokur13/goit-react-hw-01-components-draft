@@ -4,12 +4,9 @@ import Statistics from './Statistics';
 function StatisticsMap({ data }) {
   return (
     <ul className="stat-list">
-      {data.map(dataElement => (
-        <li key={dataElement.id} className="item">
-          <Statistics
-            label={dataElement.label}
-            ratio={dataElement.percentage}
-          />
+      {data.map(item => (
+        <li key={item.id} className="item">
+          <Statistics label={item.label} ratio={item.percentage} />
         </li>
       ))}
     </ul>
