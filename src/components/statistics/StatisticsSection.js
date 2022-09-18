@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function StatisticsSection({ title, children }) {
   return (
-    <section className="statistics">
+    <section className="section">
       {title && <h2 className="title">{title}</h2>}
       {children}
     </section>

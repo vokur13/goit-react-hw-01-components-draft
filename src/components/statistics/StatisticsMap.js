@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import Statistics from './Statistics';
 
-function StatisticsMap({ dataArr }) {
+function StatisticsMap({ data }) {
   return (
     <ul className="stat-list">
-      {dataArr.map(dataElement => (
+      {data.map(dataElement => (
         <li key={dataElement.id} className="item">
           <Statistics
             label={dataElement.label}
