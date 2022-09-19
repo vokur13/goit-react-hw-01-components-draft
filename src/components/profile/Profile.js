@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImage from '../../img/default.jpg';
+import css from './Profile.module.css';
 
 export default function Profile({
   avatar = defaultImage,
@@ -11,7 +12,7 @@ export default function Profile({
   likes,
 }) {
   return (
-    <div className="profile">
+    <div className={css.profile}>
       <div className="description">
         <img
           src={avatar ?? defaultImage}

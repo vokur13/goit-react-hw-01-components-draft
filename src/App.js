@@ -9,6 +9,12 @@ import TransactionHistoryHeadMap from './components/transaction_history/Transact
 import TransactionHistoryBodyMap from './components/transaction_history/TransactionHistoryBodyMap';
 import TransactionHistoryTable from './components/transaction_history/TransactionHistoryTable';
 import TransactionHistorySection from './components/transaction_history/TransactionHistorySection';
+// import {
+//   TransactionHistoryHeadMap,
+//   TransactionHistoryBodyMap,
+//   TransactionHistoryTable,
+//   TransactionHistorySection,
+// } from './/components/transaction_history/';
 import user from './json/user.json';
 import data from './json/data.json';
 import friends from './json/friends.json';
@@ -17,7 +23,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <>
       <ProfileSection title="User Profile">
         <ProfileMap data={user} />
       </ProfileSection>
@@ -33,7 +39,7 @@ function App() {
           <TransactionHistoryBodyMap data={transactions} />
         </TransactionHistoryTable>
       </TransactionHistorySection>
-    </div>
+    </>
   );
 }
 

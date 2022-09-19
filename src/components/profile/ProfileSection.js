@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 function ProfileSection({ title, children }) {
   return (
     <section className="section">
-      {title && <h2>{title}</h2>}
-      {children}
+      <div className="container">
+        {title && <h2>{title}</h2>}
+        {children}
+      </div>
     </section>
   );
 }
